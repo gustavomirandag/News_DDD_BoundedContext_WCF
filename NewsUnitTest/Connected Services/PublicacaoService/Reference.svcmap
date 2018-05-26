@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="06ecd4b1-b158-411a-baa4-68431121ece8" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:59416/PublicacaoService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="PublicacaoService.xsd" MetadataType="Schema" ID="7a696b41-8818-4f4a-92e7-48ecb81c10f0" SourceId="1" SourceUrl="http://localhost:59416/PublicacaoService.svc?xsd=xsd2" />
+    <MetadataFile FileName="PublicacaoService1.xsd" MetadataType="Schema" ID="3b4aa9b2-fc3d-4e4b-ab65-cfb3239c715e" SourceId="1" SourceUrl="http://localhost:59416/PublicacaoService.svc?xsd=xsd0" />
+    <MetadataFile FileName="PublicacaoService2.xsd" MetadataType="Schema" ID="68c6ef14-2cee-4483-914f-23289ffad23c" SourceId="1" SourceUrl="http://localhost:59416/PublicacaoService.svc?xsd=xsd1" />
+    <MetadataFile FileName="PublicacaoService.wsdl" MetadataType="Wsdl" ID="de4efcba-6fb5-4c9c-a530-1365dd6719ca" SourceId="1" SourceUrl="http://localhost:59416/PublicacaoService.svc?wsdl" />
+    <MetadataFile FileName="PublicacaoService.disco" MetadataType="Disco" ID="0902236e-4352-4d26-adb8-d52ef8ba3d75" SourceId="1" SourceUrl="http://localhost:59416/PublicacaoService.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

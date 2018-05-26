@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.datacontract.org/2004/07/News.DomainModel.Aggregations.NoticiaAggregate" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/News.DomainModel.Aggregations.NoticiaAggregate" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:59416/PublicacaoService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="Noticia">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Conteudo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Expiracao" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Foto" nillable="true" type="tns:Foto" />
+      <xs:element minOccurs="0" name="Id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Publicacao" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Titulo" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Noticia" nillable="true" type="tns:Noticia" />
+  <xs:complexType name="Foto">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Criacao" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Descricao" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Fotografo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Imagem" nillable="true" type="xs:anyURI" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Foto" nillable="true" type="tns:Foto" />
+  <xs:complexType name="ArrayOfNoticia">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Noticia" nillable="true" type="tns:Noticia" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfNoticia" nillable="true" type="tns:ArrayOfNoticia" />
+</xs:schema>
